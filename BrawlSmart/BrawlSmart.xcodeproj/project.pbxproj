@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1816D669265DE90A0052D08D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816D668265DE90A0052D08D /* Player.swift */; };
+		1816D66B265DF7540052D08D /* PlayerDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816D66A265DF7540052D08D /* PlayerDataService.swift */; };
+		181B61772658849400095B1F /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B61762658849400095B1F /* PlayerDetailViewController.swift */; };
+		18C2AE4D265508430008385A /* BrawlerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2AE4C265508430008385A /* BrawlerDetailViewController.swift */; };
+		18E43F7126565BA200F116EE /* PowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E43F7026565BA200F116EE /* PowerCell.swift */; };
+		18E6E4B6264CB22C00F2B607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4B5264CB22C00F2B607 /* AppDelegate.swift */; };
+		18E6E4B8264CB22C00F2B607 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4B7264CB22C00F2B607 /* SceneDelegate.swift */; };
+		18E6E4BD264CB22C00F2B607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6E4BB264CB22C00F2B607 /* Main.storyboard */; };
+		18E6E4C0264CB22C00F2B607 /* BrawlSmart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4BE264CB22C00F2B607 /* BrawlSmart.xcdatamodeld */; };
+		18E6E4C2264CB22F00F2B607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E6E4C1264CB22F00F2B607 /* Assets.xcassets */; };
+		18E6E4C5264CB22F00F2B607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6E4C3264CB22F00F2B607 /* LaunchScreen.storyboard */; };
+		18E6E4D0264CB22F00F2B607 /* BrawlSmartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4CF264CB22F00F2B607 /* BrawlSmartTests.swift */; };
+		18E6E4DB264CB22F00F2B607 /* BrawlSmartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4DA264CB22F00F2B607 /* BrawlSmartUITests.swift */; };
+		18E6E4EE264CC43000F2B607 /* BrawlerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4ED264CC43000F2B607 /* BrawlerListViewController.swift */; };
+		18E6E4F0264CC44C00F2B607 /* PlayerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4EF264CC44C00F2B607 /* PlayerSearchViewController.swift */; };
+		18E6E4F2264CFEC100F2B607 /* BrawlerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4F1264CFEC100F2B607 /* BrawlerCell.swift */; };
+		18E6E4F4264D1A7600F2B607 /* Brawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4F3264D1A7600F2B607 /* Brawler.swift */; };
+		18E6E4F6264D1FB300F2B607 /* BrawlerDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E4F5264D1FB300F2B607 /* BrawlerDataService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E6E4CC264CB22F00F2B607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E6E4AA264CB22C00F2B607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E6E4B1264CB22C00F2B607;
+			remoteInfo = BrawlSmart;
+		};
+		18E6E4D7264CB22F00F2B607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E6E4AA264CB22C00F2B607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E6E4B1264CB22C00F2B607;
+			remoteInfo = BrawlSmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1816D668265DE90A0052D08D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1816D66A265DF7540052D08D /* PlayerDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDataService.swift; sourceTree = "<group>"; };
+		181B61762658849400095B1F /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
+		18C2AE4C265508430008385A /* BrawlerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerDetailViewController.swift; sourceTree = "<group>"; };
+		18E43F7026565BA200F116EE /* PowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerCell.swift; sourceTree = "<group>"; };
+		18E6E4B2264CB22C00F2B607 /* BrawlSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrawlSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E6E4B5264CB22C00F2B607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18E6E4B7264CB22C00F2B607 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18E6E4BC264CB22C00F2B607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E6E4BF264CB22C00F2B607 /* BrawlSmart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrawlSmart.xcdatamodel; sourceTree = "<group>"; };
+		18E6E4C1264CB22F00F2B607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18E6E4C4264CB22F00F2B607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18E6E4C6264CB22F00F2B607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E6E4CB264CB22F00F2B607 /* BrawlSmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrawlSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E6E4CF264CB22F00F2B607 /* BrawlSmartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlSmartTests.swift; sourceTree = "<group>"; };
+		18E6E4D1264CB22F00F2B607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E6E4D6264CB22F00F2B607 /* BrawlSmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrawlSmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E6E4DA264CB22F00F2B607 /* BrawlSmartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlSmartUITests.swift; sourceTree = "<group>"; };
+		18E6E4DC264CB22F00F2B607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E6E4ED264CC43000F2B607 /* BrawlerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerListViewController.swift; sourceTree = "<group>"; };
+		18E6E4EF264CC44C00F2B607 /* PlayerSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSearchViewController.swift; sourceTree = "<group>"; };
+		18E6E4F1264CFEC100F2B607 /* BrawlerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerCell.swift; sourceTree = "<group>"; };
+		18E6E4F3264D1A7600F2B607 /* Brawler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brawler.swift; sourceTree = "<group>"; };
+		18E6E4F5264D1FB300F2B607 /* BrawlerDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerDataService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E6E4AF264CB22C00F2B607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6E4C8264CB22F00F2B607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6E4D3264CB22F00F2B607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E6E4A9264CB22C00F2B607 = {
+			isa = PBXGroup;
+			children = (
+				18E6E4B4264CB22C00F2B607 /* BrawlSmart */,
+				18E6E4CE264CB22F00F2B607 /* BrawlSmartTests */,
+				18E6E4D9264CB22F00F2B607 /* BrawlSmartUITests */,
+				18E6E4B3264CB22C00F2B607 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E6E4B3264CB22C00F2B607 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E6E4B2264CB22C00F2B607 /* BrawlSmart.app */,
+				18E6E4CB264CB22F00F2B607 /* BrawlSmartTests.xctest */,
+				18E6E4D6264CB22F00F2B607 /* BrawlSmartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E6E4B4264CB22C00F2B607 /* BrawlSmart */ = {
+			isa = PBXGroup;
+			children = (
+				18E6E4EA264CB2E900F2B607 /* Controller */,
+				18E6E4E9264CB2E100F2B607 /* Data */,
+				18E6E4E8264CB2D800F2B607 /* Views */,
+				18E6E4B5264CB22C00F2B607 /* AppDelegate.swift */,
+				18E6E4B7264CB22C00F2B607 /* SceneDelegate.swift */,
+				18E6E4BB264CB22C00F2B607 /* Main.storyboard */,
+				18E6E4C1264CB22F00F2B607 /* Assets.xcassets */,
+				18E6E4C3264CB22F00F2B607 /* LaunchScreen.storyboard */,
+				18E6E4C6264CB22F00F2B607 /* Info.plist */,
+				18E6E4BE264CB22C00F2B607 /* BrawlSmart.xcdatamodeld */,
+			);
+			path = BrawlSmart;
+			sourceTree = "<group>";
+		};
+		18E6E4CE264CB22F00F2B607 /* BrawlSmartTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E6E4CF264CB22F00F2B607 /* BrawlSmartTests.swift */,
+				18E6E4D1264CB22F00F2B607 /* Info.plist */,
+			);
+			path = BrawlSmartTests;
+			sourceTree = "<group>";
+		};
+		18E6E4D9264CB22F00F2B607 /* BrawlSmartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18E6E4DA264CB22F00F2B607 /* BrawlSmartUITests.swift */,
+				18E6E4DC264CB22F00F2B607 /* Info.plist */,
+			);
+			path = BrawlSmartUITests;
+			sourceTree = "<group>";
+		};
+		18E6E4E8264CB2D800F2B607 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18E6E4F1264CFEC100F2B607 /* BrawlerCell.swift */,
+				18E43F7026565BA200F116EE /* PowerCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18E6E4E9264CB2E100F2B607 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				18E6E4F3264D1A7600F2B607 /* Brawler.swift */,
+				18E6E4F5264D1FB300F2B607 /* BrawlerDataService.swift */,
+				1816D668265DE90A0052D08D /* Player.swift */,
+				1816D66A265DF7540052D08D /* PlayerDataService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		18E6E4EA264CB2E900F2B607 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18E6E4ED264CC43000F2B607 /* BrawlerListViewController.swift */,
+				18E6E4EF264CC44C00F2B607 /* PlayerSearchViewController.swift */,
+				18C2AE4C265508430008385A /* BrawlerDetailViewController.swift */,
+				181B61762658849400095B1F /* PlayerDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E6E4B1264CB22C00F2B607 /* BrawlSmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E6E4DF264CB22F00F2B607 /* Build configuration list for PBXNativeTarget "BrawlSmart" */;
+			buildPhases = (
+				18E6E4AE264CB22C00F2B607 /* Sources */,
+				18E6E4AF264CB22C00F2B607 /* Frameworks */,
+				18E6E4B0264CB22C00F2B607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrawlSmart;
+			productName = BrawlSmart;
+			productReference = 18E6E4B2264CB22C00F2B607 /* BrawlSmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E6E4CA264CB22F00F2B607 /* BrawlSmartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E6E4E2264CB22F00F2B607 /* Build configuration list for PBXNativeTarget "BrawlSmartTests" */;
+			buildPhases = (
+				18E6E4C7264CB22F00F2B607 /* Sources */,
+				18E6E4C8264CB22F00F2B607 /* Frameworks */,
+				18E6E4C9264CB22F00F2B607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E6E4CD264CB22F00F2B607 /* PBXTargetDependency */,
+			);
+			name = BrawlSmartTests;
+			productName = BrawlSmartTests;
+			productReference = 18E6E4CB264CB22F00F2B607 /* BrawlSmartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18E6E4D5264CB22F00F2B607 /* BrawlSmartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E6E4E5264CB22F00F2B607 /* Build configuration list for PBXNativeTarget "BrawlSmartUITests" */;
+			buildPhases = (
+				18E6E4D2264CB22F00F2B607 /* Sources */,
+				18E6E4D3264CB22F00F2B607 /* Frameworks */,
+				18E6E4D4264CB22F00F2B607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E6E4D8264CB22F00F2B607 /* PBXTargetDependency */,
+			);
+			name = BrawlSmartUITests;
+			productName = BrawlSmartUITests;
+			productReference = 18E6E4D6264CB22F00F2B607 /* BrawlSmartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E6E4AA264CB22C00F2B607 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					18E6E4B1264CB22C00F2B607 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					18E6E4CA264CB22F00F2B607 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 18E6E4B1264CB22C00F2B607;
+					};
+					18E6E4D5264CB22F00F2B607 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 18E6E4B1264CB22C00F2B607;
+					};
+				};
+			};
+			buildConfigurationList = 18E6E4AD264CB22C00F2B607 /* Build configuration list for PBXProject "BrawlSmart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E6E4A9264CB22C00F2B607;
+			productRefGroup = 18E6E4B3264CB22C00F2B607 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E6E4B1264CB22C00F2B607 /* BrawlSmart */,
+				18E6E4CA264CB22F00F2B607 /* BrawlSmartTests */,
+				18E6E4D5264CB22F00F2B607 /* BrawlSmartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E6E4B0264CB22C00F2B607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6E4C5264CB22F00F2B607 /* LaunchScreen.storyboard in Resources */,
+				18E6E4C2264CB22F00F2B607 /* Assets.xcassets in Resources */,
+				18E6E4BD264CB22C00F2B607 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6E4C9264CB22F00F2B607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6E4D4264CB22F00F2B607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E6E4AE264CB22C00F2B607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C2AE4D265508430008385A /* BrawlerDetailViewController.swift in Sources */,
+				18E6E4F4264D1A7600F2B607 /* Brawler.swift in Sources */,
+				18E6E4B6264CB22C00F2B607 /* AppDelegate.swift in Sources */,
+				181B61772658849400095B1F /* PlayerDetailViewController.swift in Sources */,
+				1816D66B265DF7540052D08D /* PlayerDataService.swift in Sources */,
+				1816D669265DE90A0052D08D /* Player.swift in Sources */,
+				18E6E4F0264CC44C00F2B607 /* PlayerSearchViewController.swift in Sources */,
+				18E6E4C0264CB22C00F2B607 /* BrawlSmart.xcdatamodeld in Sources */,
+				18E43F7126565BA200F116EE /* PowerCell.swift in Sources */,
+				18E6E4EE264CC43000F2B607 /* BrawlerListViewController.swift in Sources */,
+				18E6E4F6264D1FB300F2B607 /* BrawlerDataService.swift in Sources */,
+				18E6E4B8264CB22C00F2B607 /* SceneDelegate.swift in Sources */,
+				18E6E4F2264CFEC100F2B607 /* BrawlerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6E4C7264CB22F00F2B607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6E4D0264CB22F00F2B607 /* BrawlSmartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6E4D2264CB22F00F2B607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6E4DB264CB22F00F2B607 /* BrawlSmartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E6E4CD264CB22F00F2B607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E6E4B1264CB22C00F2B607 /* BrawlSmart */;
+			targetProxy = 18E6E4CC264CB22F00F2B607 /* PBXContainerItemProxy */;
+		};
+		18E6E4D8264CB22F00F2B607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E6E4B1264CB22C00F2B607 /* BrawlSmart */;
+			targetProxy = 18E6E4D7264CB22F00F2B607 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18E6E4BB264CB22C00F2B607 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E6E4BC264CB22C00F2B607 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18E6E4C3264CB22F00F2B607 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E6E4C4264CB22F00F2B607 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E6E4DD264CB22F00F2B607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18E6E4DE264CB22F00F2B607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E6E4E0264CB22F00F2B607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZV9H6NZFY;
+				INFOPLIST_FILE = BrawlSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ryanchiu.BrawlSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18E6E4E1264CB22F00F2B607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZV9H6NZFY;
+				INFOPLIST_FILE = BrawlSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ryanchiu.BrawlSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18E6E4E3264CB22F00F2B607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZV9H6NZFY;
+				INFOPLIST_FILE = BrawlSmartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ryanchiu.BrawlSmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrawlSmart.app/BrawlSmart";
+			};
+			name = Debug;
+		};
+		18E6E4E4264CB22F00F2B607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZV9H6NZFY;
+				INFOPLIST_FILE = BrawlSmartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ryanchiu.BrawlSmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrawlSmart.app/BrawlSmart";
+			};
+			name = Release;
+		};
+		18E6E4E6264CB22F00F2B607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZV9H6NZFY;
+				INFOPLIST_FILE = BrawlSmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ryanchiu.BrawlSmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrawlSmart;
+			};
+			name = Debug;
+		};
+		18E6E4E7264CB22F00F2B607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZV9H6NZFY;
+				INFOPLIST_FILE = BrawlSmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ryanchiu.BrawlSmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrawlSmart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E6E4AD264CB22C00F2B607 /* Build configuration list for PBXProject "BrawlSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6E4DD264CB22F00F2B607 /* Debug */,
+				18E6E4DE264CB22F00F2B607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E6E4DF264CB22F00F2B607 /* Build configuration list for PBXNativeTarget "BrawlSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6E4E0264CB22F00F2B607 /* Debug */,
+				18E6E4E1264CB22F00F2B607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E6E4E2264CB22F00F2B607 /* Build configuration list for PBXNativeTarget "BrawlSmartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6E4E3264CB22F00F2B607 /* Debug */,
+				18E6E4E4264CB22F00F2B607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E6E4E5264CB22F00F2B607 /* Build configuration list for PBXNativeTarget "BrawlSmartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6E4E6264CB22F00F2B607 /* Debug */,
+				18E6E4E7264CB22F00F2B607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18E6E4BE264CB22C00F2B607 /* BrawlSmart.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18E6E4BF264CB22C00F2B607 /* BrawlSmart.xcdatamodel */,
+			);
+			currentVersion = 18E6E4BF264CB22C00F2B607 /* BrawlSmart.xcdatamodel */;
+			path = BrawlSmart.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18E6E4AA264CB22C00F2B607 /* Project object */;
+}
