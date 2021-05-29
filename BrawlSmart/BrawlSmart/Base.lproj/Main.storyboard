@@ -17,51 +17,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="league_icon" translatesAutoresizingMaskIntoConstraints="NO" id="1zE-Xh-ec5">
-                                <rect key="frame" x="87" y="283" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="1zE-Xh-ec5" secondAttribute="height" multiplier="15:8" id="F4Q-Nr-SeW"/>
-                                    <constraint firstAttribute="width" constant="300" id="LIG-9J-bXM"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pia-HI-anI">
-                                <rect key="frame" x="132" y="600" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="973-he-cg2"/>
-                                    <constraint firstAttribute="width" constant="150" id="K5C-bs-dgU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
-                                </state>
-                                <connections>
-                                    <action selector="searchButtonClick:" destination="O4J-P8-K9L" eventType="touchUpInside" id="b6f-sH-ple"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8qf-tZ-ZTi">
-                                <rect key="frame" x="52" y="502" width="211.5" height="40"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zku-g8-2Cy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WJ-is-Yv6">
-                                        <rect key="frame" x="0.0" y="0.0" width="11.5" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID to look up (#ABCD1234)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuc-2Y-TIX">
-                                        <rect key="frame" x="11.5" y="0.0" width="200" height="40"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="RrX-L5-plB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="449"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="league_icon" translatesAutoresizingMaskIntoConstraints="NO" id="1zE-Xh-ec5">
+                                                <rect key="frame" x="57" y="0.0" width="300" height="160"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1zE-Xh-ec5" secondAttribute="height" multiplier="15:8" id="F4Q-Nr-SeW"/>
+                                                    <constraint firstAttribute="width" constant="300" id="LIG-9J-bXM"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qf-tZ-ZTi">
+                                                <rect key="frame" x="101.5" y="223" width="211.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WJ-is-Yv6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="11.5" height="40"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID to look up (#ABCD1234)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuc-2Y-TIX">
+                                                        <rect key="frame" x="11.5" y="0.0" width="200" height="40"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="LFt-eb-qOv"/>
+                                                            <constraint firstAttribute="height" constant="40" id="xdi-MB-Ht6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pia-HI-anI">
+                                                <rect key="frame" x="132" y="326" width="150" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="973-he-cg2"/>
+                                                    <constraint firstAttribute="width" constant="150" id="K5C-bs-dgU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                                                <state key="normal" title="Search">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="searchButtonClick:" destination="O4J-P8-K9L" eventType="touchUpInside" id="b6f-sH-ple"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogU-1e-Rfb">
+                                                <rect key="frame" x="132" y="419" width="150" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="DRN-W0-Jn4"/>
+                                                    <constraint firstAttribute="width" constant="150" id="KQ2-oT-ldY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                                                <state key="normal" title="Go to My Stats" image="person.crop.circle" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="searchMyStatsButtonClick:" destination="O4J-P8-K9L" eventType="touchUpInside" id="uA5-D8-2X1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="LFt-eb-qOv"/>
-                                            <constraint firstAttribute="height" constant="40" id="xdi-MB-Ht6"/>
+                                            <constraint firstItem="ogU-1e-Rfb" firstAttribute="top" secondItem="pia-HI-anI" secondAttribute="bottom" constant="40" id="88J-Id-bA8"/>
+                                            <constraint firstItem="pia-HI-anI" firstAttribute="top" secondItem="8qf-tZ-ZTi" secondAttribute="bottom" constant="40" id="AT2-Hv-Dkj"/>
+                                            <constraint firstItem="1zE-Xh-ec5" firstAttribute="top" secondItem="RrX-L5-plB" secondAttribute="top" constant="150" id="IxE-gd-fh5"/>
+                                            <constraint firstItem="8qf-tZ-ZTi" firstAttribute="top" secondItem="1zE-Xh-ec5" secondAttribute="bottom" constant="70" id="KWb-U1-IWU"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstItem="RrX-L5-plB" firstAttribute="leading" secondItem="Fgm-93-h9q" secondAttribute="leading" id="UA8-4w-R7m"/>
+                                    <constraint firstItem="RrX-L5-plB" firstAttribute="bottom" secondItem="Fgm-93-h9q" secondAttribute="bottom" id="d1p-Gm-Mfr"/>
+                                    <constraint firstItem="RrX-L5-plB" firstAttribute="top" secondItem="Fgm-93-h9q" secondAttribute="top" id="gkY-Xs-os7"/>
+                                    <constraint firstItem="RrX-L5-plB" firstAttribute="width" secondItem="Zku-g8-2Cy" secondAttribute="width" id="muD-xQ-fSj"/>
+                                    <constraint firstItem="RrX-L5-plB" firstAttribute="trailing" secondItem="Fgm-93-h9q" secondAttribute="trailing" id="ykM-gG-QCw"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Fgm-93-h9q"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vg4-rW-kcj"/>
+                            </scrollView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="N2X-Oy-155">
                                 <rect key="frame" x="187" y="456.5" width="40" height="40"/>
                                 <constraints>
@@ -69,35 +110,15 @@
                                     <constraint firstAttribute="width" secondItem="N2X-Oy-155" secondAttribute="height" multiplier="1:1" id="NnV-IJ-iVa"/>
                                 </constraints>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogU-1e-Rfb">
-                                <rect key="frame" x="132" y="670" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="DRN-W0-Jn4"/>
-                                    <constraint firstAttribute="width" constant="150" id="KQ2-oT-ldY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
-                                <state key="normal" title="Go to My Stats" image="person.crop.circle" catalog="system">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="searchMyStatsButtonClick:" destination="O4J-P8-K9L" eventType="touchUpInside" id="uA5-D8-2X1"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gVy-79-pPe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pia-HI-anI" firstAttribute="centerX" secondItem="gVy-79-pPe" secondAttribute="centerX" id="3Vy-jj-04K"/>
                             <constraint firstItem="N2X-Oy-155" firstAttribute="centerX" secondItem="gVy-79-pPe" secondAttribute="centerX" id="BQY-U5-AfF"/>
-                            <constraint firstItem="ogU-1e-Rfb" firstAttribute="centerX" secondItem="gVy-79-pPe" secondAttribute="centerX" id="Guq-Xa-ZmS"/>
-                            <constraint firstItem="pia-HI-anI" firstAttribute="top" secondItem="yuc-2Y-TIX" secondAttribute="bottom" constant="40" id="Jdu-4F-XpL"/>
-                            <constraint firstItem="1zE-Xh-ec5" firstAttribute="top" secondItem="gVy-79-pPe" secondAttribute="top" constant="150" id="VLq-Pc-cWa"/>
-                            <constraint firstItem="8qf-tZ-ZTi" firstAttribute="centerX" secondItem="gVy-79-pPe" secondAttribute="centerX" id="dWM-vx-ira"/>
-                            <constraint firstItem="8qf-tZ-ZTi" firstAttribute="top" secondItem="1zE-Xh-ec5" secondAttribute="bottom" constant="70" id="fLS-g5-y0h"/>
-                            <constraint firstItem="ogU-1e-Rfb" firstAttribute="top" secondItem="pia-HI-anI" secondAttribute="bottom" constant="40" id="m5g-YU-eXl"/>
-                            <constraint firstItem="1zE-Xh-ec5" firstAttribute="centerX" secondItem="gVy-79-pPe" secondAttribute="centerX" id="wG6-U7-BIt"/>
+                            <constraint firstItem="Zku-g8-2Cy" firstAttribute="leading" secondItem="tnJ-IH-hB8" secondAttribute="leading" id="FQw-45-YHd"/>
+                            <constraint firstAttribute="bottom" secondItem="Zku-g8-2Cy" secondAttribute="bottom" id="MJ0-a6-MM0"/>
+                            <constraint firstItem="Zku-g8-2Cy" firstAttribute="top" secondItem="tnJ-IH-hB8" secondAttribute="top" id="UMJ-Ks-rtB"/>
+                            <constraint firstAttribute="trailing" secondItem="Zku-g8-2Cy" secondAttribute="trailing" id="dsc-lv-GEq"/>
                             <constraint firstItem="N2X-Oy-155" firstAttribute="centerY" secondItem="gVy-79-pPe" secondAttribute="centerY" id="ypg-bh-54D"/>
                         </constraints>
                     </view>

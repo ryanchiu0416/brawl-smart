@@ -28,6 +28,12 @@ class PlayerSearchViewController: UIViewController {
         // to move up view when keyboard is toggled
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        
+        
+        // to cancel keyboard
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
     // to move up view when keyboard is toggled
@@ -46,7 +52,12 @@ class PlayerSearchViewController: UIViewController {
         }
     }
     
-    
+    // cancel keyboard when user clicks on somewhere on the screen
+    // https://stackoverflow.com/questions/24126678/close-ios-keyboard-by-touching-anywhere-using-swift
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -103,11 +114,6 @@ class PlayerSearchViewController: UIViewController {
         searchButtonClick(self)
     }
     
-    // cancel keyboard when user clicks on somewhere on the screen
-    // https://stackoverflow.com/questions/24126678/close-ios-keyboard-by-touching-anywhere-using-swift
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.idTextField.resignFirstResponder()
-    }
     
     
     
@@ -129,3 +135,5 @@ class PlayerSearchViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 }
+
+
