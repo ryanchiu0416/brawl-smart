@@ -12,11 +12,51 @@ class PlayerSearchViewController: UIViewController {
     var player: Player!
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var myStatsButton: UIButton!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    var defaults: UserDefaults!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.playerService = PlayerDataService()
+        self.defaults = UserDefaults.standard
+        self.searchButton.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.6)
+        self.searchButton.layer.cornerRadius = 8
+        self.myStatsButton.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.8)
+        self.myStatsButton.layer.cornerRadius = 8
+        
+        // to move up view when keyboard is toggled
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
+    // to move up view when keyboard is toggled
+    // refer to solution: https://stackoverflow.com/questions/26070242/move-view-with-keyboard-using-swift
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    // to move up view when keyboard is toggled
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if self.defaults.object(forKey: "myPlayerTag") != nil {
+            myStatsButton.isEnabled = true
+            self.myStatsButton.backgroundColor = self.myStatsButton.backgroundColor?.withAlphaComponent(0.8)
+        } else {
+            myStatsButton.isEnabled = false
+            self.myStatsButton.backgroundColor = self.myStatsButton.backgroundColor?.withAlphaComponent(0.2)
+        }
     }
     
     
@@ -56,6 +96,20 @@ class PlayerSearchViewController: UIViewController {
             self.activityIndicatorView.stopAnimating()
         })
     }
+    
+    
+    @IBAction func searchMyStatsButtonClick(_ sender: Any) {
+        self.idTextField.text = self.defaults.value(forKey: "myPlayerTag") as? String
+        searchButtonClick(self)
+    }
+    
+    // cancel keyboard when user clicks on somewhere on the screen
+    // https://stackoverflow.com/questions/24126678/close-ios-keyboard-by-touching-anywhere-using-swift
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.idTextField.resignFirstResponder()
+    }
+    
+    
     
     func showConnectionErrorAlert() {
         let alert = UIAlertController(title: "Connection Error", message: "Unable to fetch instances", preferredStyle: UIAlertController.Style.alert)

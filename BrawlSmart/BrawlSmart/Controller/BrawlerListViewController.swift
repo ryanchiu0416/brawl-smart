@@ -19,17 +19,7 @@ class BrawlerListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-//        let statusBar1 =  UIView()
-//        statusBar1.frame = UIApplication.shared.statusBarFrame
-//        statusBar1.backgroundColor = hexStringToUIColor(hex: "FFD039")
-//        UIApplication.shared.keyWindow?.addSubview(statusBar1)
         addStatusBarColor()
-        
-        
-        
-        // Do any additional setup after loading the view.
         self.activityIndicatorView.startAnimating()
         self.brawlerService = BrawlerDataService()
         self.isEmptyList = false

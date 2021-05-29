@@ -83,11 +83,6 @@ extension BrawlerDetailViewController: UITableViewDataSource {
                 cell.powerIconImg.image = UIImage(data: powerImg! as Data)
             }
         }
-        
-//        var string = "<!DOCTYPE html> <html> <body> <h1>My First Heading</h1> <p>My first paragraph.</p> </body> </html>"
-//        let str = string.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
-        
-        
         return cell
     }
     

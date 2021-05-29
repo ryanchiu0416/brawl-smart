@@ -54,16 +54,4 @@ class BrawlerDataService {
         
         task.resume()
     }
-
-
-
-    func getAllBrawlersData() -> [Brawler] {
-        return [
-//            Brawler(named: "Shelly", isOfClass: "Fighter", isOfRarity: "Trophy Road", description: "Shelly's spread-fire shotgun blasts the other team with buckshot. Her Super destroys cover and keeps her opponents at a distance!"),
-//            Brawler(named: "Shelly", isOfClass: "Fighter", isOfRarity: "Trophy Road", description: "Shelly's spread-fire shotgun blasts the other team with buckshot. Her Super destroys cover and keeps her opponents at a distance!"),
-//            Brawler(named: "Shelly", isOfClass: "Fighter", isOfRarity: "Trophy Road", description: "Shelly's spread-fire shotgun blasts the other team with buckshot. Her Super destroys cover and keeps her opponents at a distance!"),
-//            Brawler(named: "Shelly", isOfClass: "Fighter", isOfRarity: "Trophy Road", description: "Shelly's spread-fire shotgun blasts the other team with buckshot. Her Super destroys cover and keeps her opponents at a distance!"),
-//            Brawler(named: "Shelly", isOfClass: "Fighter", isOfRarity: "Trophy Road", description: "Shelly's spread-fire shotgun blasts the other team with buckshot. Her Super destroys cover and keeps her opponents at a distance!")
-        ]
-    }
 }
